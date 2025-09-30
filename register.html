@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrati</title>
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h2>Registrati</h2>
+        <form action="./php/register.php" method="POST">
+           
+               <input type="text" name="username" placeholder="Username" required>
+               <input type="email" name="email" placeholder="Email" required>
+               <input type="password" name="password" placeholder="Password" required>
+               <button type="submit">Registrati</button>
+        </form>
+        <p>Hai già un account? <a href="login.html">Accedi</a></p>
+    </div>
+    
+</body>
+</html>

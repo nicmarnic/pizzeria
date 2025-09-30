@@ -1,0 +1,92 @@
+.container-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 8px;
+    width: 50%;
+    margin: auto;
+    box-shadow: 0px 4px 8px rgb(184, 183, 183) ;
+    padding:12px 0;
+}
+
+.container-box{
+    padding-top: 12vh;
+}
+.container-form h2{
+    
+    text-align: center;
+    margin-bottom: 40px;
+    background-color: beige;
+    width: 80%;
+    padding: 15px;
+    border-radius: 8px;
+
+}
+
+form{
+    background-color: beige;
+    width: 80%;
+    border-radius: 8px;
+    padding:12px;
+}
+
+.form-group{
+    margin-bottom: 20px;
+}
+
+label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea, select{
+  width: 90%;
+  padding: 8px;
+  border-radius: 5px;
+  border-color: blue;
+}
+
+/*per modificare un singolo campo di input, inseriamo nelle 
+  parentesi quadre il type="valore_attributo"*/
+
+input[type="number"]{
+    width: 20%;
+
+}
+
+input[type="radio"]{
+    width: 10px;
+
+}
+
+input[type="text"]:focus{
+    outline: none; /*rimuove il bordo nero*/
+    border-color: rgb(173, 173, 248);
+}
+input[type="text"]:hover{
+    outline: none;
+    border-color: rgb(173, 173, 248);
+    background-color: rgb(173, 173, 248);
+}
+
+.button-form{
+    display: block;
+    width: 90%;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(175, 175, 153);
+    cursor: pointer;
+    margin-bottom: 8px;
+    font-weight: bold;
+    transition: transform 0.3s, ease-in-out 0.3s;
+}
+
+.button-form:hover{
+    transform: scale(1.1);
+    background-color:beige;
+ 
+}

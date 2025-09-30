@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    /* margin-top: 5%; */
+    margin-bottom: 20%;
+}
+
+.navbar{
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-color: rgba(189, 141, 17, 0.358);
+    padding: 10px;
+
+    /* fissare la navbar */
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    
+    width: 100%;
+    height: 50px;
+  
+
+}
+
+.logo img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.nav-container{
+    flex:1;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-li{
+    display: flex;
+    list-style: none;
+}
+
+.nav-li li{
+    position: relative;
+    margin: 0 10px;
+}
+
+.nav-li a{
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.nav-li a:hover{
+    background-color: rgb(148, 147, 147);
+    color:black;
+}
+
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    box-shadow: 0px 4px 5px gray;
+    background-color: black;
+
+}
+
+.dropdown-content a{
+    white-space: nowrap;
+    display: block;
+    
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.nested-dropdown{
+
+    position: relative;
+}
+
+.nested-dropdown-content{
+    display: none;
+    position:absolute;
+    left: 100%;
+    top:0;
+    background-color: black;
+    box-shadow: 0px 4px 5px gray;
+
+}
+.nested-dropdown:hover .nested-dropdown-content{
+    display: block;
+}
+
+#vuoto{
+    display: block;
+    height: 80px;
+
+}
+
+
+/* ::before pseudo-elemento che aggiunge una velo grigio all'img */
+
+
+.padding-top-18{
+  padding-top: 12vh;
+}
+
+
+
+.footer{
+    
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    width: 100%;
+   /*  margin-top: 2000px; */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+ .link-footer{
+    color:white;
+    text-decoration: none;
+ }
+
+ .ban {
+    background: url('../img/immagine_pizzeria.png') /*no-repeat  center center/cover */;
+    /* height: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 8vw;
+    font-weight: bold;
+    background-position: center ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 70px;
+   
+    width: 100%;
+
+    
+    
+
+}
+
+
+table, th, td{
+    border: 1px solid white;
+    border-collapse: collapse;/* unisce i bordi dell tabella */
+    border-radius: 8px; /* arrotonda i bordi */
+   }
+
+   th, td{
+    background-color:#9cd496 ;
+    padding:10px;
+
+   }
+   
+   table{
+     width:100%;
+   }
+
+   th{
+    width: 33%
+   }
+
+   td{
+    height: 50px;
+   }

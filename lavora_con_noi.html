@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/card.css">
+</head>
+<body>
+
+
+    <!-- navbar -->
+    <nav class="navbar">
+        <!-- gestisce il logo -->
+        <a href="./index.html" class="logo">
+            <img src="./img/restaurant.png" alt="logo">
+        </a>
+
+
+
+         <!-- gestisce il menu -->
+        <div class="nav-container">
+
+            <ul class="nav-li">
+
+                <li><a href="./home.html">HOME</a></li>
+                <li><a href="./chi_siamo.html">CHI SIAMO</a></li>
+                <li class="dropdown">
+                    <a href="./nostre_pizze_index.html">PIZZE</a>
+                    <div class="dropdown-content">
+                        <a href="./pizze/margherita.html">MARGHERITA</a>
+                        <a href="./pizze/capricciosa.html">CAPRICCIOSA</a>
+                        <a href="./pizze/4_stagioni.html">4 STAGIONI</a>
+                    </div>
+                
+                </li>
+                <li><a href="./lavora_con_noi.html">LAVORA CON NOI</a></li>
+               <!--  <li class="dropdown">
+                    <a href="#">Categorie</a>
+                    <div class="dropdown-content">
+                        <a href="#Tech">Tech</a>
+                        <a href="#Gadget">Gadget</a>
+
+                        <div class="nested-dropdown">
+                            <a href="#">Software ></a>
+                            <div class="nested-dropdown-content">
+                                <a href="#MacOS">MacOS</a>
+                                <a href="#Windows">Windows</a>
+                                <a href="#Linux">Linux</a>
+                            </div>
+                        </div>
+                    </div>
+                </li> -->
+
+            </ul>
+
+
+        </div>
+
+    </nav>
+
+    <div class="ban">
+        Pizzeria Bella Napoli
+    </div>
+    <h1>LAVORA CON NOI</h1>
+    <!-- container -->
+    <div class="container ">
+
+        <div class="container-form">
+
+            <h2>Form di Contatto</h2>
+            <!-- l'attributo 
+        action =  inserisci la pagina per inviare i dati al server
+        method =  per inviare i dati in modo POST "nascosto" GET "visibile"
+        enctype="multipart/form-data" invia i file "PDF JPEG PNG ecc.."
+    -->
+            <form action="./php/recruiting.php" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <!-- il tag input prevede vari attributi:
+                        type="text" inserire sting (caratteri)
+                        name ="valore" serve per inviare dati al server
+                        placeholder = "per visualizzare informazione nel campo input"
+                        title="toltip informativo"
+                         required campo obbligatorio -->
+                    <label for="nome"> Nome:</label>
+                    <input type="text" name="nome" id="nome" placeholder="inserisci il tuo nome*"
+                        title="inserisci il tuo nome competo" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="cognome"> Cognome:</label>
+                    <input type="text" name="cognome" id="cognome" placeholder="inserisci il tuo cognome*"
+                        title="inserisci il tuo cognome competo" required>
+                </div>
+
+                
+
+                <div class="form-group">
+                    <!-- type="email" campo per inserire e verifica se hai inserito una email -->
+                    <label for="email"> Email:</label>
+                    <input type="email" name="email" id="email" placeholder="inserisci email*" title="inserisci email"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <!-- type="number" campo per inserire solo numeri 
+                     min="18" max="110" puoi impostare un valore minimo di partenza e un vaolre 
+                     max -->
+                    <label for="età"> Età:</label>
+                    <input type="number" name="eta" id="eta" placeholder="inserisci eta*" title="inserisci eta" min="18"
+                        max="110" required>
+                </div>
+
+
+                <div class="form-group">
+                    <!-- type="tel" campo per inserire solo numeri Telefonici-->
+                    <label for="tel"> Tel:</label>
+                    <input type="tel" name="tel" id="tel" placeholder="inserisci tel*" title="inserisci tel">
+                </div>
+
+                <div class="form-group">
+                    <!-- type="date" visualizza il calendario delle date mesi e giorni-->
+                    <label for="data-nascita"> Data Nascita:</label>
+                    <input type="date" name="data-nascita" id="data-nascita" placeholder="inserisci data-nascita*"
+                        title="inserisci data-nascita">
+                </div>
+
+                <div class="form-group">
+                    <!-- type="radio" campo per selezionare un solo vaolre -->
+                    <label for="sesso"> sesso:</label>
+                    <input type="radio" name="sesso" id="Maschio" value="M"> Maschio
+                    <input type="radio" name="sesso" id="Femmina" value="F"> Femmina
+                </div>
+
+                
+
+                
+
+                <div class="form-group">
+                    <label for="file"> Inserisci il tuo curriculum</label>
+                    <input type="file" name="file" id="file" accept=".pdf, .png">
+                </div>
+
+
+                <div class="form-group">
+                    <label for="messaggio"> Messaggio: </label>
+                    <textarea name="messaggio" id="messaggio" cols="20" rows="20">
+                        inserisci la tua descrizione:
+                    </textarea>
+                </div>
+
+                
+                <button class="button-form" type="submit">Invia</button>
+                <button class="button-form" type="reset">Reset</button>
+
+
+
+            </form>
+
+
+        </div>
+        
+    </div>
+
+
+   
+     <!-- footer -->
+    <div class="footer">
+        <footer>
+            <p> &copy; 2020 - 2021 </p>
+            <p> contattaci al numero: 333.33333</p>
+            <p> <a class="link-footer" href="#socialFacebook" target="_blank"> Facebook</a></p>
+        </footer>
+    </div>
+
+</body>
+
+
+
+</html>
